@@ -1,0 +1,6 @@
+---
+# defaults file for tech-hack-role
+
+pacotes: 
+  - httpd
+  - htop

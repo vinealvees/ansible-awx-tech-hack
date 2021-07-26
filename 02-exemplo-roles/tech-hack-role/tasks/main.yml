@@ -1,0 +1,27 @@
+---
+# tasks file for tech-hack-role
+
+    - name: "Teste de Ping"
+      ping:
+
+    - name: "Instalando Apache"
+      yum:
+        name: "{{ pacotes }}"
+        state: latest
+        notifier: "Inicializando Apache"
+      
+    # - name: "Inicializando Apache - Collection"
+    #   ansible.bultin.service:
+    #     name: httpd
+    #     state: started
+    #     enabled: yes
+
+    - name: "Configurando Pagina Inicial"
+      ansible.builtin.template:
+        src: index.html
+        dest: /var/www/html/index.html
+
+    # - name: "Configurando Pagina Inicial"
+    #   template:
+    #     src: index.html
+    #     dest: /var/www/html/index.html

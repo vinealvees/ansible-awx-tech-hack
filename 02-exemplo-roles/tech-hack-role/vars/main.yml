@@ -1,0 +1,5 @@
+---
+# vars file for tech-hack-role
+
+pacotes: 
+  - java

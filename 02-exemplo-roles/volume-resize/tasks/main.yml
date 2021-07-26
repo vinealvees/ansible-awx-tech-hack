@@ -1,0 +1,8 @@
+---
+# tasks file for volume-resize
+- name: "Alterando tamanho do disco"
+  amazon.aws.ec2_vol:
+    id: "vol-0df3021af04385e3c"
+    modify_volume: yes
+    volume_size: 20
+

@@ -1,0 +1,6 @@
+- name: "Playbook para execucao de tarefas"
+  hosts: servidores
+  remote_user: root
+  roles:
+    - tech-hack-role
+    - volume-resize
