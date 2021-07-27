@@ -5,10 +5,12 @@
       ping:
 
     - name: "Instalando Apache"
-      yum:
+      apt:
         name: "{{ pacotes }}"
         state: latest
-        notifier: "Inicializando Apache"
+        install_recommends: yes
+        update_cache: yes
+      notify: "Inicializando Apache"
       
     # - name: "Inicializando Apache - Collection"
     #   ansible.bultin.service:
