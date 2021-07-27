@@ -8,9 +8,11 @@
       ping:
 
     - name: "Instalando Apache"
-      yum:
-        name: httpd
+      apt:
+        name: apache2
         state: latest
+        install_recommends: yes
+        update_cache: yes
     
     - name: "Inicializando Apache"
       service: 
