@@ -4,7 +4,7 @@
     - name: "Teste de Ping"
       ping:
 
-    - name: "Instalando Apache"
+    - name: "Instalando {{ pacotes }}"
       apt:
         name: "{{ pacotes }}"
         state: latest

@@ -2,5 +2,5 @@
 # defaults file for tech-hack-role
 
 pacotes: 
-  - apache2
+  - cowsay
   - htop

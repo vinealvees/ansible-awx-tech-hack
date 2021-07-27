@@ -1,0 +1,4 @@
+---
+# defaults file for volume-add
+
+aws_region: us-east-2
