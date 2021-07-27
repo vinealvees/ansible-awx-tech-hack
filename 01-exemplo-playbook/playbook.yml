@@ -6,6 +6,7 @@
   tasks:
     - name: "Teste de Ping"
       ping:
+      when: ansibible_facts['distribution'] == "Ubuntu"
 
     - name: "Instalando Apache"
       apt:
