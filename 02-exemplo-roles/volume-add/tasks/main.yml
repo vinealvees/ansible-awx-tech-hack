@@ -3,6 +3,7 @@
 - name: "Alterando tamanho do disco"
   amazon.aws.ec2_vol:
     instance: "i-06d8b806b4978fecb"
+    delete_on_termination: yes
     modify_volume: yes
     volume_size: 20
     volume_type: "gp3"
