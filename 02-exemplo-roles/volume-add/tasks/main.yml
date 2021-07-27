@@ -5,5 +5,8 @@
     instance: "i-06d8b806b4978fecb"
     modify_volume: yes
     volume_size: 20
+    volume_type: "gp3"
+    throughput: 500
+    iops: 3000
     region: "us-east-2"
 
