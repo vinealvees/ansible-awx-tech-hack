@@ -7,6 +7,10 @@
     - name: "Teste de Ping"
       ping:
       when: ansible_facts['distribution'] == "Ubuntu"
+
+    - name: "Resultado do Ping"
+      debug:
+        msg: "{{ resultado_ping }}"
     
     - name: "Exibindo valores da variavel ansible_facts_distribution"
       debug:
