@@ -7,6 +7,7 @@
     - name: "Teste de Ping"
       ping:
       when: ansible_facts['distribution'] == "Ubuntu"
+      register: resultado_ping
 
     - name: "Resultado do Ping"
       debug:
