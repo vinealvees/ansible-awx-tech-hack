@@ -8,5 +8,4 @@
     volume_type: gp3
     volume_size: 20
     iops: 250
-    throughput: 500
     region: "us-east-2"
