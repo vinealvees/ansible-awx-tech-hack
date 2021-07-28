@@ -4,10 +4,7 @@
   amazon.aws.ec2_vol:
     instance: "i-06d8b806b4978fecb"
     delete_on_termination: yes
-    modify_volume: yes
+    device_name: sdd
     volume_size: 20
-    volume_type: "gp3"
-    throughput: 500
-    iops: 3000
+    iops: 200
     region: "us-east-2"
-
