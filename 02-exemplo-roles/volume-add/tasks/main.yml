@@ -2,7 +2,7 @@
 # tasks file for volume-add
 - name: "Alterando tamanho do disco"
   amazon.aws.ec2_vol:
-    instance: "i-006b9ee44083c0352"
+    instance: "i-0ec16b4ca74fab91e"
     delete_on_termination: yes
     device_name: /dev/sdf
     volume_type: gp3
