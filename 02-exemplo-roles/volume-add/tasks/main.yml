@@ -1,6 +1,6 @@
 ---
 # tasks file for volume-add
-- name: "Alterando tamanho do disco"
+- name: "Adicionando novo disco"
   amazon.aws.ec2_vol:
     instance: "i-0ec16b4ca74fab91e"
     delete_on_termination: yes
