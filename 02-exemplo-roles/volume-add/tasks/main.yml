@@ -2,7 +2,7 @@
 # tasks file for volume-add
 - name: "Adicionando novo disco"
   amazon.aws.ec2_vol:
-    instance: "i-0ec16b4ca74fab91e"
+    instance: "i-09a907464c7dd76af"
     delete_on_termination: yes
     device_name: /dev/sdf
     volume_type: gp3
